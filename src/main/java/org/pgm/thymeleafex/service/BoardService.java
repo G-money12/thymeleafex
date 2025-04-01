@@ -1,7 +1,6 @@
-package org.pgm.board01.service;
+package org.pgm.thymeleafex.service;
 
-import org.pgm.board01.dto.BoardDTO;
-
+import org.pgm.thymeleafex.dto.BoardDTO;
 import java.util.List;
 
 

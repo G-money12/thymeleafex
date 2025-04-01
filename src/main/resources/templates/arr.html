@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+c
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<ul>
+    <li th:each="str,status:${list}">
+        <span th:if="${status.odd}">ODD -- [[${str}]]</span>
+        <span th:unless="${status.odd}">EVEN -- [[${str}]]</span>
+    </li>
+</ul>
+<ul>
+    <li th:each="str,status:${list}">
+        <span>[[${status.index}]]-[[${str}]]</span>
+        <span>[[${status.count}]]-[[${str}]]</span>
+    </li>
+</ul>
+
+
+<ul>
+    <th:block th:each="str:${list}">
+        <li>[[${str}]]</li>
+    </th:block>
+</ul>
+
+<ul>
+    <li th:each="str:${list}">
+        <span th:text="${str}"></span>
+        <span>[[${str}]]</span>
+    </li>
+</ul>
+
+<h1 th:text="${list}"></h1>
+<hr>
+<h1>[[${list}]]</h1>
 </body>
 </html>

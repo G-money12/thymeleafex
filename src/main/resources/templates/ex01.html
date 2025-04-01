@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<a href="/hello1?name=AAA&age=20">Go to /hello1</a><br/>
+<a th:href="@{hello1(name='AAA', age=10)}">Go to /hello1</a><br/>
+<a href="/hello2?name=한글 처리&age=20">Go to /hello2</a><br/>
+<a th:href="@{hello2(name='한글 처리', age=10)}">Go to /hello2</a><br/>
+
+<a th:href="@{hello3(types=${ {'AAA','BBB','CCC'} }, age=10)}">Go to /hello3</a><br/>
+<a href="/hello3?types=AAA&types=BBB&types=CCC&age=20">Go to /hello3</a>
 </body>
 </html>

@@ -1,7 +1,8 @@
-package org.pgm.board01.mapper;
+package org.pgm.thymeleafex.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.pgm.board01.dto.BoardDTO;
+import org.pgm.thymeleafex.dto.BoardDTO;
+
 
 import java.util.List;
 

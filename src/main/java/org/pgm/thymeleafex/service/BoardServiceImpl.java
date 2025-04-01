@@ -1,9 +1,9 @@
-package org.pgm.board01.service;
+package org.pgm.thymeleafex.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.pgm.board01.dto.BoardDTO;
-import org.pgm.board01.mapper.BoardMapper;
+import org.pgm.thymeleafex.dto.BoardDTO;
+import org.pgm.thymeleafex.mapper.BoardMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
