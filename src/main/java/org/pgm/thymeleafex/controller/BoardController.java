@@ -1,8 +1,8 @@
-package org.pgm.board01.controller;
+package org.pgm.thymeleafex.controller;
 
 import lombok.extern.log4j.Log4j2;
-import org.pgm.board01.dto.BoardDTO;
-import org.pgm.board01.service.BoardService;
+import org.pgm.thymeleafex.dto.BoardDTO;
+import org.pgm.thymeleafex.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

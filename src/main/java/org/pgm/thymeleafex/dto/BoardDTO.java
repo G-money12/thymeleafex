@@ -1,8 +1,12 @@
-package org.pgm.board01.dto;
+package org.pgm.thymeleafex.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
+
 @Data                    // lobook
 @NoArgsConstructor      // 디폴트 생성자
 @AllArgsConstructor     // 아그먼트 모두 있는것 생성자
