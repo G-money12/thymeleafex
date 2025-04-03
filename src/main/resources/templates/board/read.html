@@ -7,6 +7,7 @@
     <div class="card">
         <div class="card-body">
             <div class="card-title">게시글 등록</div>
+            <!--/*  */-->
             <div class="mb-3">
                 <label for="bno" class="form-label">Bno</label>
                 <input type="text" class="form-control" name="bno" id="bno" th:value="${board.bno}">
@@ -31,10 +32,15 @@
                 <label for="readcount" class="form-label">ReadCount</label>
                 <input type="text" class="form-control" name="readcount" id="readcount" th:value="${board.readcount}">
             </div>
-
-            <button type="button" class="btn btn-outline-primary">Modify</button>
-            <button type="button" class="btn btn-outline-danger">Remove</button>
-            <button type="button" class="btn btn-outline-secondary">List</button>
+            <!--/*  */-->
+            <div class="mb-3">
+                <a th:href="@{/board/modify(bno=${board.bno})}">
+                    <button type="button" class="btn btn-primary">Modify</button>
+                </a>
+                <a th:href="@{/board/list}">
+                    <button type="button" class="btn btn-secondary">Board List</button>
+                </a>
+            </div>
         </div>
     </div>
 </div>
